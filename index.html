@@ -7,15 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-  test
-  <button>open</button>
+  <div class="cont"></div>
+  <div><button>open</button></div>
   <script>
     const dom = document.querySelector("button");
+    const dom1 = document.querySelector(".cont");
     dom.addEventListener("click", () => {
       const t = window.open("");
       setTimeout(() => {
-        alert(t);
         t.location.href = "https://wwww.baidu.com";
+        dom1.innerHTML = String(t);
       }, 3000);
     });
   </script>
