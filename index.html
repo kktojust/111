@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    hello world!!!
+    test
+  <button>open</button>
+  <script>
+    const dom = document.querySelector("button");
+    dom.addEventListener("click", () => {
+      const t = window.open("https://www.baidu.com");
+      alert('res' + t);
+    });
+  </script>
 </body>
 </html>
